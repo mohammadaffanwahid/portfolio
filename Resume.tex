@@ -1,0 +1,150 @@
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+\usepackage{array}
+\usepackage{tabularx}
+
+\ifxetexorluatex
+  \setmainfont{Lato}
+\else
+  \usepackage[default]{lato}
+\fi
+
+\definecolor{VividPurple}{HTML}{6A0F8E}
+\definecolor{SlateGrey}{HTML}{6A0F8E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Muhammad Affan Wahid}
+
+\personalinfo{%
+  \begin{tabular}{@{}p{7.4cm} p{7.4cm} p{7.4cm}@{}}
+    \vspace*{-3mm}\email{mohammadaffanwahid@gmail.com} & \faPhone\ {+92 3024755039} & \faGlobe\ \href{https://affanwahid.com}{\texttt{affanwahid.com}} \\
+    \github{mohammadaffanwahid} & \linkedin{muhammad-affan-wahid} & \location{Lahore, Pakistan} \\
+  \end{tabular}
+
+
+}
+
+\makecvheader
+
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Work Experience}
+
+\cvevent{\textbf{Agentic AI Team Lead}}{Hire a Bot}{Jan 2026 -- Current}{Lahore}
+\begin{itemize}
+    \item Managing a team of 4 engineers to develop an Agentic AI chat and voice bot SaaS platform from scratch.
+    \item Architecting and launching a fully autonomous voice and chat agent platform with seamless third-party service integration to manage end-to-end customer workflows.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior Python Developer}}{Turing}{Oct 2024 -- Jan 2026}{Remote}
+\begin{itemize}
+    \item Enhanced Meta's Llama 4 with RLHF (Reinforcement Learning Through Human Feedback) for single and multi-turn conversations.
+    \item Stayed Top Performer in a team of 98 people for five consecutive weeks through impactful contributions to project milestones and outcomes. Gained special permission to work on the weekends as a bonus.
+    \item Created high quality and detailed dataset for training Google's Gemini 2.5 Flash.
+    \item Developed training data for agentic AI models across PayPal, Slack, Google Drive, Calendar, Microsoft Teams, and Gmail; received bonus hours for consistently maintaining high-quality work.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Software Engineer}}{Educative, Inc.}{June 2023 -- May 2024}{Lahore, Pakistan}
+\begin{itemize}
+    \item Created the interview vertical front and back end, opening a robust new funnel and stable revenue avenues.
+    \item Integrated Hubspot to streamline Userback and support top-notch user feedback functionality.
+    \item Created a pipeline to collect custom metric data using OTEL and integrated it with Google Dashboards for visualization.
+    \item Translated Figma blueprints into a seamless, production-ready Next.js experience and led code reviews to maintain quality.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Computer Vision Intern}}{Hazen.ai}{Nov 2022 -- Jan 2023}{Lahore, Pakistan}
+\begin{itemize}
+\item Created an automatic framework for synthetic license plate datasets across multiple countries to minimize human effort and maximize productivity.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Research Intern}}{Intelligent Machines Lab ITU}{Jul 2021 -- Oct 2021}{Lahore, Pakistan}
+\begin{itemize}
+\item Engaged in intricate labeling of malaria cell data used in a CVPR-published research paper titled \textbf{"Towards Low-Cost and Efficient Malaria Detection,"} earning acknowledgment.
+\end{itemize}
+
+\switchcolumn
+\cvsection{Education}
+\cvevent{BS in Computer Science}{Information Technology University}{2019-2023}{Lahore, Pakistan}
+\divider
+\cvevent{FSc Pre-Engineering}{Fazaia Intermediate College}{Aug 2017-Nov 2019}{Lahore, Pakistan}
+\divider
+\cvevent{Matriculation}{Fazaia Intermediate College}{Jun 2015-Aug 2017}{Lahore, Pakistan}
+
+\cvsection{Technical Skills}
+        \cvtag{Python}\cvtag{Django}\cvtag{LangChain}\cvtag{LangGraph}\cvtag{Agentic AI}\cvtag{Vector Databases}\cvtag{Voice Bots}\cvtag{Chatbots}\cvtag{ReactJS}\cvtag{NextJS}\cvtag{JavaScript}
+
+\cvsection{Extracurricular}
+    \textbf{Co-Founder Kaar-e-kamal ITU (2022-current)}
+        \begin{itemize}
+            \item Created this chapter from scratch providing free education, food, and medicine to the needy ones.
+        \end{itemize}
+    \textbf{Treasurer GDSC-ITU (2022-2023)}
+        \begin{itemize}
+            \item Organized the funds of many events for the developers including CodeRush coding competition.
+        \end{itemize}
+    \textbf{Treasurer IEEE-ITU (2022-2023)}
+        \begin{itemize}
+            \item Organized the funds of many events for the engineers including IEEEXtreme coding competition.
+        \end{itemize}
+\cvsection{Achievements}
+    \textbf{1st position}
+        \begin{itemize}
+            \item  Programming Competition at Superior Technical
+Symposium 2021.
+        \end{itemize}
+
+    \textbf{1st position}
+        \begin{itemize}
+            \item Atchison College AI Competition.
+        \end{itemize}
+        
+    \textbf{2nd position}
+        \begin{itemize}
+            \item All over Pakistan in IEEE Extreme Programming Competition
+2021.
+        \end{itemize}
+
+    \textbf{2nd position}
+        \begin{itemize}
+            \item position at GDSC Code Rush programming competition held at
+ITU.
+        \end{itemize}
+    \textbf{3rd position}
+        \begin{itemize}
+            \item at the IEEE Code Camp held at UET.
+        \end{itemize}
+\end{paracol}
+
+\end{document}
